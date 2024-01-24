@@ -63,7 +63,7 @@ color: white;
 
 .row{
   box-sizing: border-box;
-  width: 50%;
+  width: auto;
   height: auto;
   padding: 50px;
   list-style-type: none;
