@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  
+}
+
+.logo{
+  padding-top: 6px;
+  padding-left: 25px;
+}
+
+nav{
+  background-color: rgb(50, 155, 155);
+  height: 80px;
+  width: 100%;
+}
+
+nav ul{
+  float: right;
+  margin-right: 55px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a{
+color: rgb(241, 255, 252);
+text-decoration: none;
+font-size: 15px;
+font-family: 'Nunito Sans', sans-serif;
+padding: 7px 13px;
+}
+
+nav ul li a:hover{
+background: palevioletred; 
+border-radius: 5px;
+color: white;
+}
+
+
+.checkButton{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+.myCheckBox{
+  display: none;
+}
+
+
+
+.forBackground{
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.row{
+  box-sizing: border-box;
+  width: 50%;
+  height: auto;
+  padding: 50px;
+  list-style-type: none;
+}
+
+.link{
+  color: black;
+  font-family: poppins;
+  background-color: gainsboro;
+  padding: 5px;
+  width: 100%;
+  margin-bottom: 5px;
+  border-radius: 50px;
+}
+
+.link:hover{
+  background: rgb(199, 230, 152) ;
+}
+
+@media(max-width: 415px){
+	#row{
+	margin-top: 8px;
+	width: 90vw;
+	max-width: 400px;
+	height: 90vw;
+	max-height: 400px; 
+  
+  
+}}
+
+
+@media screen and (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 858px){
+  .checkButton{
+    display: block;
+  }
+
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    background-color: antiquewhite;
+  }
+
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a{
+    font-size: 20px;
+    color: darkcyan;
+  }
+
+  a:hover{
+    color: white;
+  }
+
+  .myCheckBox:checked ~ul{
+    left: 0;
+
+  }
+}
